@@ -762,43 +762,35 @@ q {
   height: 10px;
   width: 10px;
 }
-.sub {
-  color: #000;
-  background: url(../images/color_circle.png) no-repeat scroll 0px 15px transparent;
-  text-transform: uppercase;
-}
-.sub:last-child {
-  background: transparent;
-}
 #start {
   color: #000;
 }
 #infoline {
-  width: 920px;
-  height: 40px;
-  margin-left: 20px;
-  margin-top: 7px;
-  margin-bottom: 5px;
+  height: 20px;
+  margin-right: 8px;
+  margin-bottom: 7px;
 }
 #infoline li {
   float: right;
   color: #999999;
   display: block;
-  padding: 10px 10px 10px 15px;
-  height: 20px;
+  padding: 5px;
 }
-#infoline a {
+#infoline li a {
   color: #999999;
+  background: url(../images/color_circle.png) no-repeat scroll 0px 5px transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 10px;
 }
-.section-kindergarten #infoline ul li.sub a:hover {
+#infoline li:last-child a {
+  background: transparent;
+}
+.section-kindergarten #infoline a:hover {
   color: #009ee0;
 }
-.section-kinderkrippe #infoline ul li.sub a:hover {
+.section-kinderkrippe #infoline a:hover {
   color: #45a12a;
-}
-#infoline a:hover,
-a:focus {
-  color: #009ee0;
 }
 #navigation {
   /*     background-color: #e1ae1c;
@@ -812,6 +804,7 @@ a:focus {
   background: url(../images/butterfly.png) no-repeat 100% 0px transparent;
   width: 65px;
   height: 50px;
+  float: right;
 }
 #lines {
   height: 5px;
@@ -823,10 +816,9 @@ a:focus {
 }
 #copyright {
   float: left;
-  color: #d7d7d7;
-  font-size: 70%;
-  margin-top: -10px;
-  margin-left: 250px;
+  color: #999999;
+  font-size: 10px;
+  padding-top: 20px;
 }
 #navigation .selected a,
 #navigation a:hover {
@@ -927,114 +919,66 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
   padding-left: 0.5em;
   line-height: 2em;
 }
-dl.portlet ul.navTree .navTreeCurrentItem {
-  background-color: #ddd;
-  border-left: 1em solid #ddd;
-  margin-left: -1em;
-  margin-right: -1em;
-}
 /* @end */
 #sidebar-left .portletNavigationTree {
   margin-top: 12px;
 }
-.navTreeItem {
-  background: #009ee0;
-  font-size: 110%;
-  display: inline-block;
-  height: 40px;
-}
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div {
-  height: 40px;
-  padding-top: 8px;
+#sidebar-left .portletNavigationTree .portletHeader {
   background-color: #45a12a;
+  padding: 18px 8px;
 }
-#sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeItem div {
-  width: 205px;
-  height: 40px;
-  padding-top: 8px;
-  background-color: #009ee0;
+#sidebar-left .portletNavigationTree .portletHeader a {
+  color: #ffffff;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a.contenttype-plone-site {
-  background: none;
-  margin-right: 10px;
-  padding-left: 15px;
-  color: #fff;
-  margin-bottom: 10px;
-  height: 40px;
+#sidebar-left .portletNavigationTree ul.navTree {
+  margin-left: 13px;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div a:hover {
-  background: none;
-  margin-right: 10px;
-  padding-left: 0px;
-  padding-left: 15px;
-  color: #fff;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem {
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #999999;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem {
-  border-bottom: 2px solid #d7d7d7;
-  background-color: #fff;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem a {
+  background: url(../images/circle_grey.png) no-repeat 5px 8px transparent;
+  display: block;
+  padding-left: 20px;
   color: #999999;
-  padding-top: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree > li.navTreeItem:first-child {
-  border-bottom: 2px solid #d7d7d7;
-  background-color: #fff;
-  color: #999999;
-  padding-top: 10px;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem.navTreeTopNode {
+  margin: 0px;
+  padding: 8px 0px 8px 8px;
+  background: #45a12a;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem span {
-  color: #999999;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem.navTreeTopNode a {
+  padding: 0px;
+  color: #ffffff;
+  background: transparent;
+  font-weight: normal;
+  font-size: 140%;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published {
-  background: url(../images/circle_grey.png) no-repeat 10px 5px transparent;
-  display: inline-block;
-  height: 30px;
-  padding-left: 30px;
-  color: #999999;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem.navTreeTopNode a.navTreeCurrentItem {
+  color: #ffffff;
+  background: transparent;
+  text-decoration: underline;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:visited {
-  color: #999999;
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem.navTreeCurrentNode {
+  border-bottom: 2px solid #45a12a;
 }
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode a.state-published {
-  background: url(../images/circle_kk.png) no-repeat 10px 5px transparent;
-  display: inline-block;
-  padding-left: 30px;
-  height: 30px;
-  color: #45a12a;
-  border-bottom: 1px solid  #45a12a;
-}
-#sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeCurrentNode a.state-published {
-  background: url(../images/circle_kg.png) no-repeat 10px 5px transparent;
-  display: inline-block;
-  padding-left: 30px;
-  height: 30px;
-  color: #009ee0;
-  border-bottom: 1px solid  #009ee0;
-}
-#sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeCurrentNode span {
-  color: #009ee0;
-}
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeCurrentNode span {
+#sidebar-left .portletNavigationTree ul.navTree li.navTreeItem.navTreeCurrentNode a {
+  background: url(../images/circle_kk.png) no-repeat 5px 8px transparent;
   color: #45a12a;
 }
-#sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeItem a.state-published:hover {
-  background: url(../images/circle_kg.png) no-repeat 10px 5px transparent;
-  display: inline-block;
-  padding-left: 30px;
+#sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeTopNode {
+  background: #009ee0;
+}
+#sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeCurrentNode {
+  border-bottom: 2px solid #009ee0;
+}
+#sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeCurrentNode a {
+  background: url(../images/circle_kg.png) no-repeat 5px 8px transparent;
   color: #009ee0;
-  border-bottom: 1px solid  #009ee0;
-}
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover {
-  background: url(../images/circle_kk.png) no-repeat 10px 5px transparent;
-  display: inline-block;
-  padding-left: 30px;
-  color: #45a12a;
-  border-bottom: 1px solid  #45a12a;
-}
-#sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeItem a.state-published:hover span {
-  color: #009ee0;
-}
-#sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:hover span {
-  color: #45a12a;
 }
 #navigation .selected a,
 #navigation a:hover {
@@ -2455,11 +2399,7 @@ div.overlay .formControls a {
   text-transform: uppercase;
 }
 .section-kinderkrippe #footer-logo {
-  background: url(../images/footer_logo_kk.png) no-repeat 0px 0px transparent;
-  height: 150px;
-  width: 200px;
-  margin-left: -20px;
-  margin-top: -45px;
+  background: url(../images/footer_logo_kk.png) no-repeat 0px 0px transparent !important;
 }
 #footer p {
   font-size: 0.7em;
