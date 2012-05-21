@@ -110,7 +110,7 @@ q {
 /* @group wrapper elements */
 
 #editbar-wrapper + header {
-    margin-top: 60px;
+    margin-top: 40px;
 }
 #header-wrapper {
     background-color: #fff;
@@ -142,7 +142,7 @@ q {
 
 #header {
     background: url(../images/header_kg.png) 50% 0px no-repeat transparent;
-    padding: 70px 0px 20px;
+    padding: 70px 0px 10px;
     #logo {
         background: url(../images/logo_kg.png) 0px 0px no-repeat transparent;
         margin: 0px @baseLineHeight;
@@ -154,9 +154,11 @@ q {
         border: none;
         }
 }
-
 .section-kinderkrippe #header {
-    background: url(../images/header_kk.png) 0px 0px no-repeat transparent;
+    background: url(../images/header_kk.png) 50% 0px no-repeat transparent;
+    #logo {
+        background: url(../images/logo_kk.png) 0px 0px no-repeat transparent;  
+    }
 }
 
 #colorbar {
@@ -181,17 +183,6 @@ q {
 
 #header a {
     color: #fff;
-}
-
-.section-kinderkrippe #logo {
-    background: url(../images/logo_kk.png) 0px 0px no-repeat transparent;
-    margin: 70px 0px 0px 0px;
-    width: 420px;
-    height: 150px;
-    display: block;
-    text-indent: -3000px;
-    overflow: hidden;
-    border: none;   
 }
 
 .divide {
@@ -247,18 +238,16 @@ q {
     }
 }
 
-.section-kindergarten #infoline ul li.sub a:hover, a:focus {
+.section-kindergarten #infoline ul li.sub a:hover {
     color: #009ee0;
-    font-size: 80%;
 }
 
-.section-kinderkrippe #infoline ul li.sub a:hover, a:focus {
+.section-kinderkrippe #infoline ul li.sub a:hover {
     color: #45a12a;
-    font-size: 80%;
 }
  #infoline a:hover, a:focus {
     color: #009ee0;
-    font-size: 80%;
+
 }
 
 
@@ -301,7 +290,6 @@ q {
 
 dl.portlet {
     margin: 0 0 1em;
-    font-size: 80%;
 }
 dl.portletError {
     background-color: #FFA500;
@@ -439,7 +427,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     height: 40px;
     padding-top: 8px; 
     background-color: #45a12a;  
-    font-size: 120%;   
 }
 
 #sidebar-left > dl.portlet:first-child dd.portletItem ul.navTree li.navTreeItem div {
@@ -447,7 +434,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     height: 40px;
     padding-top: 8px; 
     background-color: #009ee0;  
-    font-size: 120%;   
 }
 
 
@@ -472,20 +458,14 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     border-bottom: 2px solid #d7d7d7;
     background-color: #fff;
     color: #999999;
-    font-size: 90%;
     padding-top:10px;
-    height: 30px;
-    width:205px;
 }
 
 #sidebar-left dl.portlet dd.portletItem ul.navTree > li.navTreeItem:first-child {
     border-bottom: 2px solid #d7d7d7;
     background-color: #fff;
     color: #999999;
-    font-size: 90%;
     padding-top:10px;
-    height: 40px;
-    width:205px;
 }
 #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem span {
      color: #999999;   
@@ -496,7 +476,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     display: inline-block;
     height: 30px;
     padding-left: 30px; 
-    width: 180px;
     color: #999999;
 }
 #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem a.state-published:visited{
@@ -506,7 +485,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: url(../images/circle_kk.png) no-repeat 10px 5px transparent;
     display: inline-block;
     padding-left: 30px; 
-    width: 180px;
     height: 30px;
     color: #45a12a;
     border-bottom: 1px solid  #45a12a;
@@ -516,7 +494,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: url(../images/circle_kg.png) no-repeat 10px 5px transparent;
     display: inline-block;
     padding-left: 30px; 
-    width: 180px;
     height: 30px;
     color: #009ee0;
     border-bottom: 1px solid  #009ee0;
@@ -531,7 +508,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: url(../images/circle_kg.png) no-repeat 10px 5px transparent;
     display: inline-block;
     padding-left: 30px; 
-    width: 180px;
     color:  #009ee0;
     border-bottom: 1px solid  #009ee0;
 }
@@ -540,7 +516,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: url(../images/circle_kk.png) no-repeat 10px 5px transparent;
     display: inline-block;
     padding-left: 30px; 
-    width: 180px;
     color:  #45a12a;
     border-bottom: 1px solid  #45a12a;
 }
