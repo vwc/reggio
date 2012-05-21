@@ -14,132 +14,75 @@
     <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>
 </head>
 <body>
-
-<div id="outer-wrapper">
-<div id="inner-wrapper">
-<div id="site-wrapper">
-<div id="top-wrapper">
-
-<div id="header-wrapper">
-<div id="costum_header">
-<!--<div id="colorbar"> </div>
-<div class="colorline"></div>-->
-    <div id="header">
-
-    <div class="row">
-
-        <div class="cell position-0 width-1:2">
-             <a href="/" id="logo">Logo</a>
-        </div>
-        <div class="cell position-1:2 width-1:2">
-            <div id="topactions">
-
+<div id="editbar-wrapper">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <div id="edit-bar"><!-- --></div>
             </div>
-
         </div>
-        
-        <div class="visualClear"><!-- --></div>
     </div>
+</div>
+<header>
+    <div id="header-wrapper" class="container">
+    <div id="header">
+        <a href="/" id="logo">Logo</a>
     </div>
-<!--    <div class="colorline"></div>-->
     <div id="infoline">
         <ul>
-            <li class="sub"><a href="/träger">TRÄGER</a></li>
-            <li class="sub"><a href="/elternbeirat">ELTERNBEIRAT</a></li>
-            <li class="sub"><a href="/pädagogik">PÄDAGOGIK</a></li>
-            <li class="sub"><a href="/konzeption">KONZEPTION</a></li>
-            <li class="sub"><a href="/kontakt">KONTAKT</a></li>
-            <li id="sub"><a href="/team">TEAM</a></li>    
+            <li class="sub"><a href="/traeger">Tr&auml;ger</a></li>
+            <li class="sub"><a href="/elternbeirat">Elternbeirat</a></li>
+            <li class="sub"><a href="/paedagogik">P&auml;dagogik</a></li>
+            <li class="sub"><a href="/konzeption">Konzeption</a></li>
+            <li class="sub"><a href="/kontakt">Kontakt</a></li>
+            <li class="sub"><a href="/team">Team</a></li>    
         </ul>
     </div>
-<!--    <div id="navigation">
-       <ul id="main-nav">
-            
-        </ul>
-    
-    </div> -->
     <div class="colorline"></div>
-</div>
-</div>
-</div>
-<div id="editbar-wrapper">
-    <div id="editbar"></div>
-</div>
-<div id="content-wrapper">
-<div id="main-content">
-    <div class="row">
-        <div class="cell position-0 width-1:4">
-            <div id="sidebar-left">
-
-            </div>
-            
-        </div>
-        <div class="cell position-1:4 width-1:2">
-            
-            <div id="content">
-                
-            </div>
-             
-         <!--   <div class="visualClear">&nbsp;</div>-->
-        </div>
-        
-        <div class="cell width-1:4 position-3:4">
-        <!--    <form id="search" name="search" action="/search"> 
-                <input id="search-site"
-                     name="SearchableText"
-                     title="SUCHE&hellip;" accesskey="4"
-                     class="inputLabel" size="15"
-                />
-                <input class="searchButton"
-                    type="submit"
-                    value=" "
-                    id="search-site-button"
-                />
-            </form> -->
-            <div class="divide"> </div>
-            <div id="sidebar-right">   
-                
-            
-            </div>
-            <div class="divide_bottom"></div> 
-        </div>
-
     </div>
-
-    <div class="visualClear"><!-- --></div>
-
-</div>
-
-</div>
-<div id="butterfly"></div>
-<div id="copyright">
-                copyright &copy;2012 Katholischer Reggio-Kindergarten. All rights reserved.
+</header>
+<section id="content-wrapper" class="container">
+    <div id="main-content">
+        <div class="row-fluid">
+            <div class="span3">
+                <div id="sidebar-left">
+                </div>
             </div>
-<div id="lines"></div>
-<div style="clear:both">&nbsp;</div>
-</div>
+            <div class="span6">
+                <div id="content">
+                </div>
+            </div>
+            <div class="span3">
+                <div class="divide"> </div>
+                <div id="sidebar-right">   
+                </div>
+                <div class="divide_bottom"></div> 
+            </div>
+        </div>
+    </div>
+</section>
+<aside id="below-main-content" class="container">
+    <div class="row-fluid">
+        <div class="span3">
+            <div id="butterfly"><!-- butterfly icon --></div>
+        </div>
+        <div class="span9" id="copyright">
+            copyright &copy;2012 Katholischer Reggio-Kindergarten. All rights reserved.
+        </div>
+    </div>
+</aside>
 
-</div><!-- end inner-wrapper -->
-<div id="push"></div>
-</div> <!-- end outer-wrapper -->
-
-<div id="footer-wrapper">
-    
+<footer id="footer-wrapper" class="container">
+    <div class="pull-left" id="footer-logo"></div>
 	<div id="footer">
         <div id="footer-gradient"></div>
-	    <div class="row">
-            <div class="cell position-11 width-1:2" id="footer-info">
-                <ul id="kontaktbar">                   
-                    <li><a href="/e-mail">E-MAIL</a></li>
-                    <li><a href="/home">HOME</a></li>
-                    <li><a href="/kontakt">KONTAKT</a></li>
-                    <li><a href="/impressum">IMPRESSUM</a></li>
-                </ul>
-	        </div>
-            <div id="footer-logo"></div>
-	        <div class="visualClear"><!-- --></div>
-	    </div>
+        <ul id="kontaktbar">                   
+            <li><a href="/e-mail">E-Mail</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+        </ul>
 	</div>
-</div>
+</footer>
 </body>
 </html>

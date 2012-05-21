@@ -32,12 +32,6 @@ iframe { border-width: 0; border-style:none; }
 
 /* @group Basics */
 
-body {
-    font: 100% Arial, FreeSans, sans-serif;
-    background: White;
-    color: Black;
-    /* width: 58em; margin: 1em auto; */
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Helvetica Neue", Arial, FreeSans, sans-serif;
@@ -81,13 +75,6 @@ h2 a, h3 a, h4 a {
     border-bottom: none !important;
 }
 
-p {
-}
-
-a:link, a:visited {
-    color: #205c90;
-}
-
 a:focus img {
     outline: thin dotted;
 }
@@ -122,85 +109,54 @@ q {
 
 /* @group wrapper elements */
 
-html, body {
-/* Sticky footer */
-	height: 100%;
+#editbar-wrapper + header {
+    margin-top: 60px;
 }
-
-#outer-wrapper {
-/* Sticky footer w/IE fixes*/
-    background: url(../images/bg_line.png) 0px 0px repeat;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -16em;
-}
-
-#inner-wrapper {
-    margin: 0px auto;
-}
-
-#top-wrapper {
-   /* background: @background-color; */
-}
-
-#site-wrapper {
-    background-color: #fff;
-    width:950px;
-    height: auto !important;
-    height: 100%;
-    margin: 0px auto;
-    border-left: 1px solid #e0e1e1;
-    border-right: 1px solid #e0e1e1;
-}
-
 #header-wrapper {
     background-color: #fff;
-    margin:0px auto;
-    width:950px;
+    border: 0px solid @grayLight;
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 
 #content-wrapper {
     background-color: #fff;
-    margin: 0px auto;
-    width:950px;
+    border: 0px solid @grayLight;
+    border-left-width: 1px;
+    border-right-width: 1px;
 }
 
 #main-content {
     border: 0px solid red;
+}
+#below-main-content {
+    background-color: #fff;
+    border: 0px solid @grayLight;
+    border-width: 0px 1px 1px 1px;
 }
 
 
 /* @end */
 
 /* @group Header */
-#costum_header {
-    display: block;
-    height: 240px;
-}
 
 #header {
-    background: url(../images/header_kg.png) 0px 0px no-repeat transparent;
- /*   border: 0px solid #333; */
-    display: block;
-    text-indent: -3000px;
-    overflow: hidden;
-    border: none;
-    margin: 0px 10px 0px 15px;
-    width:920px;
-    height: 230px;
+    background: url(../images/header_kg.png) 50% 0px no-repeat transparent;
+    padding: 70px 0px 20px;
+    #logo {
+        background: url(../images/logo_kg.png) 0px 0px no-repeat transparent;
+        margin: 0px @baseLineHeight;
+        width: 420px;
+        height: 150px;
+        display: block;
+        text-indent: -3000px;
+        overflow: hidden;
+        border: none;
+        }
 }
 
 .section-kinderkrippe #header {
     background: url(../images/header_kk.png) 0px 0px no-repeat transparent;
- /*   border: 0px solid #333; */
-    display: block;
-    text-indent: -3000px;
-    overflow: hidden;
-    border: none;
-    margin: 0px 10px 0px 15px;
-    width:920px;
-    height: 230px;
 }
 
 #colorbar {
@@ -227,17 +183,6 @@ html, body {
     color: #fff;
 }
 
-#logo {
-    background: url(../images/logo_kg.png) 0px 0px no-repeat transparent;
-    margin: 70px 0px 0px 0px;
-    width: 420px;
-    height: 150px;
-    display: block;
-    text-indent: -3000px;
-    overflow: hidden;
-    border: none;
-}
-
 .section-kinderkrippe #logo {
     background: url(../images/logo_kk.png) 0px 0px no-repeat transparent;
     margin: 70px 0px 0px 0px;
@@ -247,47 +192,6 @@ html, body {
     text-indent: -3000px;
     overflow: hidden;
     border: none;   
-}
-
-#search {
-    width: 210px;
-    height: 40px;
-    display: block;
-    float:right;
-    margin: 20px 10px 0px 0px;
-    background-color: #933389;
-}
-
-#search-site {
-    background: #933389;
-    color: #fff;
-    border-right: 0px solid #933389;
-    border-left: 1px solid #fff;
-    border-top:1px solid #fff;
-    border-bottom:1px solid #fff;
-    height: 21px;
-    width: 150px;
-    margin-left: 10px;
-    margin-top: 8px;
-}
-
-#search-site-button {
-    background-color: #933389;
-    background: url(../images/search.png) 10px 5px no-repeat transparent;
-    border-left: 0px solid #933389 ;
-    border-top: 1px solid #fff;
-    border-bottom:1px solid #fff;
-    border-right:1px solid #fff;
-    color: #fff;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 0.8em;
-    text-transform: uppercase;
-    width: 30px;
-    height: 23px;
-    text-align: right;
-    padding-right: 6px;
-    padding-bottom: 1px;
 }
 
 .divide {
@@ -313,13 +217,12 @@ html, body {
 .sub {
     color: #000;
     background: url(../images/color_circle.png) no-repeat scroll 0px 15px transparent;
-
+    text-transform: uppercase;
+    &:last-child {
+        background: transparent;
+    }
 }
 
-#sub {
-     color: #000; 
-
-}
 #start {
     color: #000;
 
@@ -332,20 +235,18 @@ html, body {
     margin-left: 20px;
     margin-top: 7px;
     margin-bottom: 5px;
+    li {
+        float: right;
+        color: #999999;
+        display: block;
+        padding: 10px 10px 10px 15px;
+        height: 20px;
+    }
+    a {
+        color: #999999;
+    }
+}
 
-}
-#infoline li{
-    float: right;
-    color: #999999;
-    display: block;
-    padding: 10px 10px 10px 15px;
-    height: 20px;
-}
-
-#infoline a {
-    color: #999999;
-    font-size: 80%;
-}
 .section-kindergarten #infoline ul li.sub a:hover, a:focus {
     color: #009ee0;
     font-size: 80%;
@@ -369,16 +270,10 @@ html, body {
     width: 920px;
 }
 
-
-#sidebar-left {
-    margin-left: 10px;
-}
 #butterfly {
-    background:url(../images/butterfly.png) no-repeat 0px 0px transparent;
+    background:url(../images/butterfly.png) no-repeat 100% 0px transparent;
     width: 65px;
     height: 50px;
-    margin-top: 110px;
-    margin-left: 150px;
 }
 #lines {
     height:5px;
@@ -402,6 +297,134 @@ html, body {
     padding: 10px 15px 10px 15px;
 }
 
+/* @group Portlets */
+
+dl.portlet {
+    margin: 0 0 1em;
+    font-size: 80%;
+}
+dl.portletError {
+    background-color: #FFA500;
+}
+
+dl.portlet dt,
+div.portletAssignments div.portletHeader {
+    padding: 0.42em 1em;
+    background: #ddd;
+    line-height: normal;
+}
+dl.portlet dt.hiddenStructure {
+    padding: 0;
+}
+div.portletAssignments {
+    font-size: 0.8em;
+    line-height: 2em;
+}
+
+div.portletAssignments .managedPortletActions {
+    float: right;
+}
+div.portletAssignments .managedPortletActions a {
+    margin: 0 0.25em;
+    border: none;
+}
+
+dl.portlet dt a:link,
+dl.portlet dt a:visited,
+dl.portlet dt a:hover {
+    color: black;
+    display: block;
+    border: none;
+}
+
+dl.portlet dd.portletItem,
+dl.portlet dd.portletFooter,
+dl.portletError dd {
+    padding: 1em;
+    margin: 0px;
+}
+
+.portletItem ul {
+    margin-left: 0px;
+}
+
+
+
+div.managePortletsLink,
+a.managePortletsFallback {
+    text-align: center;
+    padding: 0.25em 0.5em;
+    font-size: 80%;
+    margin: 0 auto 1em;
+    background: #ddd;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+}
+a.managePortletsFallback {
+    display:inline-block; /* in order for our vertical margins to work on inline element */
+}
+#content a.managePortletsFallback {
+    display: block;
+    border-bottom: none !important;
+}
+
+#portlet-prefs a {
+    border: none;
+    line-height: 2em;
+}
+
+#visual-portal-wrapper dl.portletCalendar dd {
+    padding: 0;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+    display: inline-block;
+}
+
+/* @end */
+
+/* @group Navigation portlet */
+
+dl.portlet ul.navTree li a {
+    border: none;
+    display: block;
+    zoom: 1;
+}
+
+dl.portlet ul.navTree li a:hover {
+
+}
+
+dl.portletNavigationTree dd.portletItem {
+    padding: 0;
+}
+
+dl.portlet ul.navTreeLevel0 > .navTreeItem {
+    padding: 0.25em 1em;
+    border-bottom: 0.1em dotted #ddd;
+    line-height: 2em;
+}
+
+dl.portlet ul.navTreeLevel1 .navTreeItem {
+    padding-left: 0.5em;
+    line-height: 2em;
+}
+
+dl.portlet ul.navTree .navTreeCurrentItem {
+    background-color: #ddd;
+    border-left: 1em solid #ddd;
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+/* @end */
+
+
+
 #sidebar-left .portletNavigationTree {
     margin-top: 12px;
 }
@@ -413,7 +436,6 @@ html, body {
 } 
 
 #sidebar-left dl.portlet dd.portletItem ul.navTree li.navTreeItem div {
-    width: 205px;
     height: 40px;
     padding-top: 8px; 
     background-color: #45a12a;  
@@ -645,14 +667,6 @@ dl.portletEvents dd.portletFooter {
 }
 
 #editbar-wrapper {
-    width: 950px;
-    margin: 60px auto;
-    margin-bottom: 0px;
-
-}
-
-#edit-bar ul {
-    background-color: #45a12a;
 
 }
 
@@ -777,7 +791,6 @@ dl.portletEvents dd.portletFooter {
 #content {
     line-height: 1.5em;
     clear: both;
-    font-size: 80%;
     margin: 1em 0.25em 2em 0.25em;
 }
 
@@ -1263,6 +1276,71 @@ dl.error dd {
 /* @end */
 
 /* @group Editing */
+// -------------
+
+// COMMON STYLES
+// -------------
+
+.navbar {
+  // Fix for IE7's bad z-indexing so dropdowns don't appear below content that follows the navbar
+  *position: relative;
+  *z-index: 2;
+
+  overflow: visible;
+  margin-bottom: @baseLineHeight;
+}
+
+// Gradient is applied to it's own element because overflow visible is not honored by IE when filter is present
+.navbar-inner {
+  min-height: @navbarHeight;
+  padding-left:  20px;
+  padding-right: 20px;
+  //#gradient > .vertical(@navbarBackgroundHighlight, @navbarBackground);
+  background: @navbarBackground;
+  .border-radius(4px);
+  .box-shadow(~"0 1px 3px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.1)");
+}
+
+// Set width to auto for default container
+// We then reset it for fixed navbars in the #gridSystem mixin
+.navbar .container {
+  width: auto;
+}
+
+// FIXED NAVBAR
+// ------------
+
+// Shared (top/bottom) styles
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: @zindexFixedNavbar;
+  margin-bottom: 0; // remove 18px margin for static navbar
+}
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner {
+  padding-left:  0;
+  padding-right: 0;
+  .border-radius(0);
+}
+
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container {
+  #grid > .core > .span(@gridColumns);
+}
+
+// Fixed to top
+.navbar-fixed-top {
+  top: 0;
+}
+
+// Fixed to bottom
+.navbar-fixed-bottom {
+  bottom: 0;
+}
+
 
 /* @group Tabs */
 
@@ -1272,33 +1350,21 @@ dl.error dd {
     border: 0.3em solid #ddd;
 }
 #edit-bar {
-    background-color: #333;
-    border: 0.25em solid #333;
-    font-size: 80%;
-    min-height: 2em;
-    margin-bottom: 1em;
-    padding-top: 0.05em;
 }
 #content-views {
     float: left;
-    background-color: #333;
+    background-color: @navbarBackground;
 }
 #content-views a {
     color: White;
 }
 
 /* Shared CSS between the two tab types */
-#edit-bar,
 #content ul.formTabs {
     display: block;
-    border-style: solid solid none solid;
+    border-style: solid;
     margin-left: 0;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    -webkit-border-top-right-radius: 0.5em;
-    -webkit-border-top-left-radius: 0.5em;
-    -moz-border-radius-topleft: 0.5em;
-    -moz-border-radius-topright: 0.5em;
+    .border-radius(4px);
 }
 #content li.formTab {
     display: inline;
@@ -1332,12 +1398,7 @@ dl.error dd {
 #content-views li a:hover,
 #content li.formTab a.selected,
 #content li.formTab a:hover {
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
-    -webkit-border-top-right-radius: 0.5em;
-    -webkit-border-top-left-radius: 0.5em;
-    -moz-border-radius-topleft: 0.5em;
-    -moz-border-radius-topright: 0.5em;
+    .border-radius(4px);
 }
 #content li.formTab a.notify {
     background-color: red;
@@ -1393,14 +1454,18 @@ dl.error dd {
 
 /* @group Content pulldowns */
 
+.contentActions {
+    padding: 5px;
+}
+
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-    background-color: #333;
+    background-color: @navbarBackground;
     color: White;
     z-index: 5;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-    border-bottom: 0.5em solid #333;
+    border-bottom: 0.5em solid @navbarBackground;
         right: -3px;
 }
 #contentActionMenus dl.actionMenu.activated dd a:hover,
@@ -1413,7 +1478,7 @@ dl.error dd {
 }
 
 #folderHeader, #contextHeader {
-        border-bottom: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
 #contextHeader { margin-top: 5px; }
@@ -1423,11 +1488,11 @@ dl.error dd {
 
 #contentActionMenus {
     float: right;
-    background: #75ad0a;
+    background: @navbarBackground;
     margin: 0;
-    position: relative;
-    top: -0.23em;
-    right:-0.24em;
+    //position: relative;
+    //top: -0.23em;
+    //right:-0.24em;
     padding: 0.1em 0.24em 0 0;
     border-radius: 0.5em;
     border-top-left-radius: 0;
@@ -2080,42 +2145,37 @@ div.overlay .formControls a {
 
 
 #footer-wrapper {
-/* Sticky footer */
-    height: 5em;
-    width: 950px;
-    margin: 0 auto;
-
-}
-
-#push {
-/* Sticky footer */
-    height: 16em;
-}
-
-#footer-gradient {
-    background: url(../images/gradient.png) repeat-x 0% 0% transparent;
-    height: 5px; 
-/*    background-color: #933389;*/
-
-}
-
-
-#footer {
-    color: White;
-    font-family: "Lucida Grande", Verdana, FreeSans, sans-serif;
-    margin: -5px auto;
- /*   padding: 1em 0; */
-    width: 950px;
-    height: 50px;
-        background: url(../images/footer_kg.png) repeat-x 0% 0% transparent;
-}
-
-#footer-logo {
-    background: url(../images/footer_logo_kg.png) no-repeat 0px 0px transparent;
-    height: 150px;
-    width: 200px;
-    margin-left: -20px;
-    margin-top: -45px;
+    margin-top: @baseLineHeight / 2;
+    border: 0px solid red;
+    #footer-logo {
+        background: url(../images/footer_logo_kg.png) no-repeat 0px 0px transparent;
+        height: 150px;
+        width: 200px;
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    #footer {
+        background: url(../images/footer_kg.png) no-repeat 0px 20px @white;
+        border: 0px solid @grayLight;
+        border-width: 1px 1px 0px 1px;
+        color: White;
+        font-family: "Lucida Grande", Verdana, FreeSans, sans-serif;
+        height: 64px;
+        //padding: @baseLineHeight * 2 0 0 0;
+        #kontaktbar {
+            margin-top: 35px;
+            text-align: right;
+            li {
+                font-size: 90%;
+                color: #fff;
+                a {
+                    color: #fff;
+                    padding-right: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
 
 .section-kinderkrippe #footer-logo {
@@ -2128,22 +2188,6 @@ div.overlay .formControls a {
 
 #footer p {
     font-size: 0.7em;
-}
-
-#kontaktbar li {
-    font-size: 90%;
-    color: #fff;
-    display: block;
-    float:left;
-}
-#kontaktbar li a {
-    color: #fff;
-    padding-right: 10px;
-}
-
-#footer-info {
-    margin-top: 7px;
-    width: 300px;
 }
 
 
@@ -2164,7 +2208,7 @@ div.overlay .formControls a {
 }
 
 .visualClear {
-	clear: both;
+    clear: both;
 }
 
 /* @end */
