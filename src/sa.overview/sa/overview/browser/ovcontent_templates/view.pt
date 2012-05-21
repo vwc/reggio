@@ -11,6 +11,8 @@
     <tal:main-macro metal:define-macro="main"
         tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
 
+      <article id="content-core">
+
         <div tal:replace="structure provider:plone.abovecontenttitle" />
 
         <h1 class="documentFirstHeading" tal:content="context/title" />
@@ -26,7 +28,7 @@
         <div tal:content="structure context/maintext" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
-
+      </article>
     </tal:main-macro>
 </metal:main>
 

@@ -10,8 +10,7 @@
 <metal:main fill-slot="main">
     <tal:main-macro metal:define-macro="main"
         tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
-
-        <div tal:replace="structure provider:plone.abovecontenttitle" />
+    <section id="content-core">
 
         <h1 class="documentFirstHeading" tal:content="context/title" />
         
@@ -24,7 +23,7 @@
         <tal:content tal:condition="view/has_ovcontent">
             <tal:block tal:repeat="item view/contained_ovcontent">
                 <tal:item tal:define="item_obj item/getObject;">
-                <div id="ov-block">
+                <article id="ov-block">
                     <div class="row">
                     
                     <div class="cell position-0 width-2:3">
@@ -49,20 +48,20 @@
                     <div id="ov-image">
                         <img tal:define="scale item_obj/@@images"
                             tal:replace="structure python:scale.scale('image',
-                                         width=200, height=200, direction='keep').tag()" />                        
+                                         width=120, height=120, direction='keep').tag()" />                        
                     </div>
                     </div>
 
                     <div class="visualClear"><!-- --></div>
                     </div>
-                </div>
+                </article>
                 </tal:item>
             </tal:block>
         </tal:content>        
         <div tal:replace="structure provider:plone.belowcontentbody" />
 
         <div tal:replace="structure provider:plone.belowcontentbody" />
-
+    </section>
     </tal:main-macro>
 </metal:main>
 
