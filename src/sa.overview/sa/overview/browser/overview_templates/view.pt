@@ -12,7 +12,13 @@
         tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime">
     <section id="content-core">
 
-        <h1 class="documentFirstHeading" tal:content="context/title" />
+        <tal:comment tal:content="nothing">
+            <h1 class="documentFirstHeading" tal:content="context/title" />
+            <!-- Note: we remove the heading since it obviously isn't needed
+            as far as the layout is concerned. Removing it here is better than
+            dropping it altogether via a Diazo rule, since pages should have a
+            title anyway -->
+        </tal:comment>
         
         <div tal:replace="structure provider:plone.belowcontenttitle" />
 

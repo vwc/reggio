@@ -64,8 +64,6 @@
 	    <drop css:content="span.portletBottomLeft" />
 	    <drop css:content="span.portletBottomRight" />
         <drop css:content="a.state-published img" />
-        <drop css:content="h1.documentFirstHeading" />
-
  
 
     </rules>
