@@ -8,9 +8,8 @@ from plone.directives import form, dexterity
 
 from sa.overview import _
 
+
 class IOverview(form.Schema):
     """
     Folderish for overview
     """
-    
-    # -*- Your Zope schema definitions here ... -*-
