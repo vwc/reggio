@@ -36,6 +36,9 @@
            tal:attributes="href obj/getURL;
                            title obj/Description">
             <img tal:replace="structure item_icon/html_tag" />
+            <span tal:replace="obj/pretty_title_or_id">
+             Some Event
+            </span>
             <span class="portletItemDetails">
                 <span
                  tal:condition="python: item_sametime"

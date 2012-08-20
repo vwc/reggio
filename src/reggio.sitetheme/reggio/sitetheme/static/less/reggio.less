@@ -28,6 +28,8 @@ iframe { border-width: 0; border-style:none; }
 @background-color: #d7d7d7;
 @border: #333;
 
+
+
 /* @end */
 
 /* @group Basics */
@@ -395,8 +397,6 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
 }
 /* @end */
 
-
-
 #sidebar-left {
     .portletNavigationTree {
         margin-top: 12px;
@@ -423,6 +423,7 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
                     &:hover {
                         color:@green;
                     }
+                    
                 }
                 &.navTreeTopNode {
                     margin: 0px;
@@ -492,10 +493,16 @@ dl.portletNews {
 
 #sidebar-right dl.portletNews p,
 dl.portletNews dt.portletHeader  {
-    color: #e2ae1c;
-    font-size: 1.8em;
+    background:url(../images/portlet_header.png) no-repeat 0px 100% transparent;
+    color: #45a12a;
+    height: 40px;
+    font-size: 26px;
     font-family: times;
-    border-bottom:1px solid #d7d7d7;
+    font-weight: lighter;
+    padding: @baseLineHeight 0px 0px 0px;
+    a {
+        color: #45a12a;
+    }
 }
 
 #sidebar-right dl.portletNews p,
@@ -539,11 +546,18 @@ dd.portletFooter a.tile {
 
 #sidebar-right dl.portletNews p,
 dl.portletNews dd.portletFooter {
-    border-bottom: 3px solid #dfdfdf;
-    margin-top: 2em;
+    color: #45a12a;
+    height: 40px;
+    font-size: 26px;
+    font-family: times;
+    font-weight: lighter;
+    padding: @baseLineHeight 0px 0px 0px;
+    a {
+        color: #45a12a;
+    }
 }
 #sidebar-right dl.portlet dd.portletItem a.tile span.portletItemDetails {
-    background: url(../images/color_circle.png) no-repeat 2px 9px transparent;
+    background: url(../images/color_circle.png) no-repeat 2px 12px transparent;
     border-bottom: 1px solid #c7c7c7;
     padding-left: 12px;
     margin-left: 0px;
@@ -720,6 +734,8 @@ body#content {
 #content h1.documentFirstHeading {
     margin: @baseLineHeight 0px;
     color: #009EE0;
+    font-weight: lighter;
+    font-family: times;
     background:url(../images/devide.png) no-repeat 0px 100% transparent;
 }
 
@@ -773,7 +789,7 @@ dl.portlet {
 
 .template-view #content #ov-block .row{
     background: url(../images/devide_small.png) no-repeat 0px 200px transparent;
-    margin-bottom: 20px;
+/*    margin-bottom: 20px;*/
 }
 .template-view #content #ov-block #ov-content{
 /*    -moz-border-image: url("../images/devide_small.png") 0 30 10 20 repeat;
