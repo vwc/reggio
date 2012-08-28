@@ -6173,7 +6173,7 @@ q {
   background: transparent;
 }
 .section-kindergarten #infoline a:hover {
-  color: #0064cd;
+  color: #009ee0;
 }
 .section-kinderkrippe #infoline a:hover {
   color: #46a546;
@@ -6361,20 +6361,20 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
   color: #46a546;
 }
 #sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeItem a:hover {
-  color: #0064cd;
+  color: #009ee0;
 }
 #sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeTopNode {
-  background: #0064cd;
+  background: #009ee0;
 }
 #sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeTopNode a:hover {
   color: #ffffff;
 }
 #sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeCurrentNode {
-  border-bottom: 2px solid #0064cd;
+  border-bottom: 2px solid #009ee0;
 }
 #sidebar-left .portletNavigationTree:first-child ul.navTree li.navTreeCurrentNode a {
   background: url(../images/circle_kg.png) no-repeat 5px 8px transparent;
-  color: #0064cd;
+  color: #009ee0;
 }
 #navigation .selected a,
 #navigation a:hover {
