@@ -7,7 +7,8 @@
   <property name="title" i18n:translate="">OvContent</property>
   <property name="description"
     i18n:translate="">content for the overview</property>
-  <property name="content_icon">document_icon.gif</property>
+  <property name="icon_expr">string:${portal_url}/document_icon.gif</property>
+  <property name="factory">sa.overview.content.ovcontent</property>
   <property name="global_allow">True</property>
   <property name="filter_content_types">False</property>  
   <property name="allowed_content_types" />
@@ -18,22 +19,21 @@
 
  <!-- class used for content items -->
  <property name="klass">plone.dexterity.content.Item</property>
-<!--
-  <property name="product">sa.overview</property>
-  <property name="factory">addOvContent</property>
--->
- <property name="add_permission">cmf.AddPortalContent</property>
+
  <property name="behaviors">
      <element value="plone.app.content.interfaces.INameFromTitle" />
      <element value="plone.app.dexterity.behaviors.metadata.IBasic"/>
  </property>
 
   <!-- View information -->
+  <property name="link_target"></property>
+  <property name="immediate_view">view</property>
   <property name="default_view">view</property>
-  <property name="default_view_fallback">False</property>
   <property name="view_methods">
     <element value="base_view" />
   </property>
+  <property name="default_view_fallback">False</property>
+  <property name="add_permission">cmf.AddPortalContent</property>
 
   <!-- Method aliases -->
   <alias from="(Default)" to="(selected layout)" />

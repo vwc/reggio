@@ -30,7 +30,7 @@
             <tal:block tal:repeat="item view/contained_ovcontent">
                 <tal:item tal:define="item_obj item/getObject;">
                 <article id="ov-block">
-                    <div class="row">
+                    <div class="xrow">
                     
                     <div class="cell position-0 width-2:3">
                     <div id="ov-content">
@@ -64,8 +64,6 @@
                 </tal:item>
             </tal:block>
         </tal:content>        
-        <div tal:replace="structure provider:plone.belowcontentbody" />
-
         <div tal:replace="structure provider:plone.belowcontentbody" />
     </section>
     </tal:main-macro>

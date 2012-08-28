@@ -302,9 +302,9 @@
 // Default value is `visible`, but can be changed to `hidden
 // See git pull https://github.com/dannykeane/bootstrap.git backface-visibility for examples
 .backface-visibility(@visibility){
-  -webkit-backface-visibility: @visibility;
-     -moz-backface-visibility: @visibility;
-          backface-visibility: @visibility;
+	-webkit-backface-visibility: @visibility;
+	   -moz-backface-visibility: @visibility;
+	        backface-visibility: @visibility;
 }
 
 // Background clipping
@@ -568,7 +568,7 @@
       width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
     }
 
-    .row-fixed {
+    .row {
       margin-left: @gridGutterWidth * -1;
       .clearfix();
     }
@@ -606,7 +606,7 @@
 
     .offset (@columns) {
       margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) + (@fluidGridGutterWidth*2);
-      *margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + (@fluidGridGutterWidth*2) - (.5 / @gridRowWidth * 100 * 1%);
+  	  *margin-left: (@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns - 1)) - (.5 / @gridRowWidth * 100 * 1%) + (@fluidGridGutterWidth*2) - (.5 / @gridRowWidth * 100 * 1%);
     }
 
     .offsetFirstChild (@columns) {

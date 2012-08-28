@@ -8,16 +8,16 @@
    - Linked images should not have borders
    */
 
-* { margin: 0; padding: 0; }
-* :link,:visited { text-decoration:none }
-* ul,ol { list-style:none; }
-* li { display: inline; }
-* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
-* a img,:link img,:visited img { border:none }
-a { outline: none; }
-table { border-spacing: 0; }
-img { vertical-align: text-bottom; }
-iframe { border-width: 0; border-style:none; }
+//* { margin: 0; padding: 0; }
+//* :link,:visited { text-decoration:none }
+//* ul,ol { list-style:none; }
+//* li { display: inline; }
+//* h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+//* a img,:link img,:visited img { border:none }
+//a { outline: none; }
+//table { border-spacing: 0; }
+//img { vertical-align: text-bottom; }
+//iframe { border-width: 0; border-style:none; }
 
 
 /* @end */
@@ -111,9 +111,15 @@ q {
 
 /* @group wrapper elements */
 
-#editbar-wrapper + header {
+#editbar-wrapper + header,
+#toolbar + header {
     margin-top: 40px;
 }
+#toolbar {
+    border-bottom: 1px solid @grayLight;
+}
+
+
 #header-wrapper {
     background-color: #fff;
     border: 0px solid @grayLight;
@@ -435,7 +441,8 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
                         background: transparent;
                         font-weight: normal;
                         font-size: 140%;
-                        &.navTreeCurrentItem {
+                        &.navTreeCurrentItem,
+                        &:hover {
                             color: @white;
                             background:transparent;
                             text-decoration: underline;
@@ -460,6 +467,9 @@ dl.portlet ul.navTreeLevel1 .navTreeItem {
             }
             li.navTreeTopNode {
                 background: @blueDark;
+                a:hover {
+                    color: @white;
+                }
             }
             li.navTreeCurrentNode {
                 border-bottom: 2px solid @blueDark;
@@ -2096,6 +2106,8 @@ div.overlay .formControls a {
             li {
                 font-size: 90%;
                 color: #fff;
+                display: inline;
+                .ie7-inline-block();
                 a {
                     color: #fff;
                     padding-right: 10px;
