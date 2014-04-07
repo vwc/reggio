@@ -5,6 +5,8 @@
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     
     <!-- Apply rules to a standard Plone Webpage -->
+    <theme href="frontpage.html" css:if-content="body.section-front-page"/>
+    
     <rules css:if-content="#visual-portal-wrapper">
 
         <theme href="theme.html" />

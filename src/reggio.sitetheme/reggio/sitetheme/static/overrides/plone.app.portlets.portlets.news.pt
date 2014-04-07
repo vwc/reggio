@@ -32,6 +32,8 @@
             </span>
          </a>
                  <span class="tile" tal:define="desc obj/Description" tal:content="python:desc[:150] + '...'"></span>
+                 <a id="more" href="" class="tilelink" tal:attributes="href obj/getURL;
+title obj/Description"> mehr </a>
           <!--  <span class="portletItemDetails"
                   tal:content="python:toLocalizedTime(obj.Date)">May 5</span> -->
             
